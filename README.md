@@ -1,14 +1,16 @@
-# Estimation-of-Yield-and-Loss-in-Pomegranate-Orchards-Using-Deep-Learning-and-Tracking
+<h1 align="center"> Estimation-of-Yield-and-Loss-in-Pomegranate-Orchards-Using-Deep-Learning-and-Tracking </h1>
 MSC Thesis - Estimation of Yield and Loss in Pomegranate Orchards Using Deep Learning and Tracking
 
-**Author:** Yuval Tenenboim  
-**Supervisors:** Prof. Yael Edan, Dr. Tarin Paz-Kagan 
+<h4 align="center"> Author: Yuval Tenenboim  </h4>
+<h4 align="center"> Supervisors: Prof. Yael Edan, Dr. Tarin Paz-Kagan </h4>
 
-Dept. of Industrial Engineering & Management, Ben-Gurion University of the Negev
+<h4 align="center"> Dept. of Industrial Engineering & Management, Ben-Gurion University of the Negev </h4>
 
-The Jacob Blaustein Institutes for Desert Research, Ben-Gurion University of the Negev, Israel
+<h4 align="center"> The Jacob Blaustein Institutes for Desert Research, Ben-Gurion University of the Negev, Israel </h4>
 
-The repository contains the code developed to support the methodology presented in the thesis, including data preprocessing, synthetic dataset generation, object detection, and tracking-based yield and loss estimation from UAV imagery.
+
+
+ The repository contains the code developed to support the methodology presented in the thesis, including data preprocessing, synthetic dataset generation, object detection, and tracking-based yield and loss estimation from UAV imagery.
 
 ## Thesis Overview
 
@@ -16,10 +18,10 @@ Fruit cracking causes substantial yield losses in pomegranate orchards, yet most
 
 The framework integrates:
 
-Task-specific object detection models for healthy (yield) and defective (loss) fruits
+- Task-specific object detection models for healthy (yield) and defective (loss) fruits
 
-A tracking-by-detection approach for video-based fruit counting
+- A tracking-by-detection approach for video-based fruit counting
 
-Tree-level yield and loss estimation under commercial orchard conditions
+- Tree-level yield and loss estimation under commercial orchard conditions
 
 The system was evaluated on UAV video data collected from multiple commercial orchard plots and validated against field-based ground-truth measurements, demonstrating that explicitly modelling fruit loss yields a more realistic and operationally relevant assessment of orchard productivity
