@@ -10,7 +10,7 @@ MSC Thesis - Estimation of Yield and Loss in Pomegranate Orchards Using Deep Lea
 
 
 
- The repository contains the code developed to support the methodology presented in the thesis, including data preprocessing, synthetic dataset generation, object detection, and tracking-based yield and loss estimation from UAV imagery.
+ The repository contains the datasets and code developed to support the methodology presented in the thesis, including data preprocessing, object detection, and tracking-based yield and loss estimation from UAV imagery.
 
 ## Thesis Overview
 
