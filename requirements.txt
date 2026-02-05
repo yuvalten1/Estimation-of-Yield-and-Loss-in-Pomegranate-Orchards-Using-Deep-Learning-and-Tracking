@@ -7,3 +7,4 @@ trackers==2.0.1
 opencv-python
 numpy
 matplotlib
+roboflow
