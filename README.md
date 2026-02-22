@@ -25,3 +25,71 @@ The framework integrates:
 - Tree-level yield and loss estimation under commercial orchard conditions
 
 The system was evaluated on UAV video data collected from multiple commercial orchard plots and validated against field-based ground-truth measurements, demonstrating that explicitly modelling fruit loss yields a more realistic and operationally relevant assessment of orchard productivity
+
+## Notebook Contents
+
+The notebook (`Estimation_Pomegranate_notebook.ipynb`) provides an end-to-end experimental pipeline used in the thesis, from dataset preparation to final yield/loss estimation evaluation.
+
+It includes the following stages:
+
+### 1. Environment setup (Google Colab)
+- Mounting Google Drive for data and results storage
+- Installing required packages (Ultralytics/YOLO, tracking libraries, supervision, etc.)
+
+### 2. Dataset download and organization
+- Downloading annotated datasets from Roboflow
+- Renaming and organizing dataset versions
+- Creating separate datasets for:
+  - **Yield (healthy fruits)**
+  - **Loss (defective/cracked fruits)**
+  - **Joint yield + loss**
+- Label cleanup and class remapping for task-specific training
+
+### 3. Dataset preprocessing and augmentation
+- Image preprocessing (including contrast enhancement / normalization steps)
+- Data augmentation for training robustness (noise, blur, and additional transforms)
+- Expansion of training sets with extra orchard images (including red tape presence examples)
+
+### 4. Fine-tuning and training object detection models
+- Fine-tuning YOLO-based models
+- Training multiple model configurations:
+  - Joint model (healthy + defective)
+  - Yield-only model
+  - Loss-only model
+- Saving training outputs and checkpoints
+
+### 5. Tiling-based training workflow
+- Creating tiled datasets to improve small-object detection in UAV imagery
+- Training tiled detection models, especially for defective fruit detection
+
+### 6. Inference and visualization
+- Loading trained / pre-trained models
+- Running predictions on validation/test images and videos
+- Visualizing detections for qualitative inspection
+
+### 7. Detection performance evaluation
+- Confusion matrix generation and visualization (including normalized confusion matrices)
+- Metric calculations derived from detection results (for yield, loss, and joint models)
+
+### 8. Synthetic dataset creation and transfer-learning experiments
+- Synthetic data preparation workflow
+- Segmentation-based processing using SAM (Segment Anything Model)
+- Creation of additional transfer-learning datasets from segmented objects/scenes
+
+### 9. Tracking and video-based counting
+- SORT-based tracking pipeline for counting fruits across UAV video frames
+- Video preparation for validation
+- Tracking runs across measuring trees sequences
+
+### 10. Yield and loss estimation evaluation
+- Aggregation of detection/tracking outputs into tree-level and plot-level estimates
+- Comparison against ground-truth field measurements
+- Regression/error analysis and visualization for:
+  - Predicted yield vs. true yield
+  - Predicted loss vs. true loss
+  - Estimation error distributions and combined performance analysis
+
+## Notes
+- The notebook is designed as a **research workflow notebook**, combining preprocessing, training, inference, tracking, and evaluation in a single place.
+- Several paths and commands are configured for **Google Colab + Google Drive** usage and may require adaptation for local execution.
+- Some cells are experimental/iterative and were used to compare multiple model and preprocessing variants during thesis development.
