@@ -1,6 +1,10 @@
 <h1 align="center"> Estimation-of-Yield-and-Loss-in-Pomegranate-Orchards-Using-Deep-Learning-and-Tracking </h1>
 MSC Thesis - Estimation of Yield and Loss in Pomegranate Orchards Using Deep Learning and Tracking
 
+<p align="center">
+ <img width="431" height="689" alt="image" src="https://github.com/user-attachments/assets/5bb5dcc8-5024-4944-91c0-11ffa0c5105d" />
+</p>
+
 <h4 align="center"> Author: Yuval Tenenboim  </h4>
 <h4 align="center"> Supervisors: Prof. Yael Edan, Dr. Tarin Paz-Kagan </h4>
 
@@ -11,6 +15,9 @@ MSC Thesis - Estimation of Yield and Loss in Pomegranate Orchards Using Deep Lea
 
 
  The repository contains the datasets and code developed to support the methodology presented in the thesis, including data preprocessing, object detection, and tracking-based yield and loss estimation from UAV imagery.
+
+ 
+
 
 ## Thesis Overview
 
@@ -24,7 +31,8 @@ The framework integrates:
 
 - Tree-level yield and loss estimation under commercial orchard conditions
 
-The system was evaluated on UAV video data collected from multiple commercial orchard plots and validated against field-based ground-truth measurements, demonstrating that explicitly modelling fruit loss yields a more realistic and operationally relevant assessment of orchard productivity
+The system was evaluated on UAV video data collected from multiple commercial orchard plots and validated against field-based ground-truth measurements, demonstrating that explicitly modelling fruit loss yields a more realistic and operationally relevant assessment of orchard productivity.
+
 
 ## Notebook Contents
 
@@ -57,6 +65,8 @@ It includes the following stages:
   - Yield-only model
   - Loss-only model
 - Saving training outputs and checkpoints
+- 
+<img width="629" height="657" alt="image" src="https://github.com/user-attachments/assets/0aac9ea6-d8c1-4815-ba5a-99bad60f7fe5" />
 
 ### 5. Tiling-based training workflow
 - Creating tiled datasets to improve small-object detection in UAV imagery
@@ -80,6 +90,9 @@ It includes the following stages:
 - SORT-based tracking pipeline for counting fruits across UAV video frames
 - Video preparation for validation
 - Tracking runs across measuring trees sequences
+
+  <img width="1037" height="385" alt="image" src="https://github.com/user-attachments/assets/6c62fe19-88ed-41e9-8d04-d034fe6f68b6" />
+
 
 ### 10. Yield and loss estimation evaluation
 - Aggregation of detection/tracking outputs into tree-level and plot-level estimates
