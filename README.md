@@ -1,5 +1,5 @@
-<h1 align="center"> Estimation-of-Yield-and-Loss-in-Pomegranate-Orchards-Using-Deep-Learning-and-Tracking </h1>
-MSC Thesis - Estimation of Yield and Loss in Pomegranate Orchards Using Deep Learning and Tracking
+<h1 align="center"> Tracking-by-detection framework for simultaneous tree-scale pomegranate yield and fruit loss estimation from UAV  </h1>
+<h4 align="center"> MSC Thesis - Tracking-by-detection framework for simultaneous tree-scale pomegranate yield and fruit loss estimation from UAV </h4>
 
 <p align="center">
  <img width="431" height="689" alt="image" src="https://github.com/user-attachments/assets/5bb5dcc8-5024-4944-91c0-11ffa0c5105d" />
